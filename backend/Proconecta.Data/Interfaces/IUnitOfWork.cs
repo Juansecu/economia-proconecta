@@ -6,7 +6,15 @@
     public interface IUnitOfWork
     {
         #region Repositories
-        //IRepository<Entity> EntityRepo { get; }
+        IRepository<Category> CategoryRepo { get; }
+        IRepository<PreOrder> PreOrderRepo { get; }
+        IRepository<PreOrderDetail> PreOrderDetailRepo { get; }
+        IRepository<Product> ProductRepo { get; }
+        IRepository<Project> ProjectRepo { get; }
+        IRepository<Provider> ProviderRepo { get; }
+        IRepository<Review> ReviewRepo { get; }
+        IRepository<Tag> TagRepo { get; }
+        IRepository<User> UserRepo { get; }
         #endregion
 
         #region Methods

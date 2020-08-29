@@ -1,6 +1,7 @@
 ﻿namespace Proconecta.Data.Models
 {
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     public class User : BaseModel
@@ -17,6 +18,9 @@
 
         [StringLength(15)]
         public string Type { get; set; }
+
+        public List<Project> Projects { get; set; }
+        public List<Provider> Providers { get; set; }
         #endregion
     }
 }
