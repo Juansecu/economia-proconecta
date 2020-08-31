@@ -36,4 +36,4 @@ Se plantea que el uso de esta Plataforma sea totalmente gratuita para los empren
 
 # Tecnologías y Herramientas
 
-C#, Javascript, Typescript, Ionic, Firebase, Heroku, Docker, Adobe XD
+C#, Javascript, Typescript, MySQL, Ionic, Firebase, Heroku, Docker, Adobe XD
