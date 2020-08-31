@@ -1,8 +1,28 @@
-# Equipo TU_EQUIPO
+# Equipo PROCONECTA
 
-Aquí deberás escribir toda la información de tu proyecto.
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
-Antes de comenzar, por favor revisa las [las instrucciones](INSTRUCTIONS.md).
+# Problemática
 
-![Hack Hero gif](https://media.giphy.com/media/IbHp2s31XVjCyfGZ5L/giphy.gif)
-UwU
+Existen muchas personas con ganas de emprender un negocio, pero se ven detenidos por la falta de elementos para poner en marcha su Proyecto, ya que no encuentran donde poder surtir su materia prima o insumos necesarios ni conocen con claridad lo que necesitan.
+
+Con lo que ha pasado con la situación económica este año, no solo en México, si no a nivel global. Muchos pequeños negocios han tenido que cerrar. 
+
+
+# Propósito
+
+Conectar a los emprendedores de forma sencilla y directa con los proveedores necesarios para su Proyecto. 
+Reactivando la economía para los pequeños negocios y dandoles la herramienta de ampliar su alcance de ventas.
+
+
+# Funcionamiento de Proconecta
+
+El emprendedor inicia sesión y tras registrar su Proyecto, puede acceder a un listado de categorías donde encontrará a los proveedores locales según su ubicación.
+
+Dentro del perfil de los proveedores, podrá encontrar los artículos relacionados a su giro que ellos ofrecen, con precios y descripciones.
+Además, se podrá evaluar a los proveedores para futuras referencias.
+
+
+# Modelo de negocio
+
+Se plantea que el uso de esta Plataforma sea totalmente gratuita para los emprendedores. En el caso de los proveedores, al funcionar de forma gratuita, limitar el número de productos que puedan regitrarse y el alcance territorial donde se muestren, y si les interesa aumentar su número de productos en exhibición y alcance, contratar licencia por mes o año.
