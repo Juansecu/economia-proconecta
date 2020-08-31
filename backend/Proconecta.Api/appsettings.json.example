@@ -1,0 +1,22 @@
+{
+  "ConnectionStrings": {
+    "db_Proconecta": "server=[SERVER];port=[PORT];database=[DATABASE];uid=[USER];pwd=[PASSWORD];"
+  },
+    "Authentication": {
+      "JwtBearer": {
+        "Authority": "https://securetoken.google.com/[APP_ID_FIREBASE]",
+        "TokenValidation": {
+          "Issuer": "https://securetoken.google.com/[APP_ID_FIREBASE]",
+          "Audience": "APP_ID_FIREBASE"
+        }
+      }
+    },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}
