@@ -1,0 +1,161 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    padding: 25px 0;
+    color: #ffffff;
+    background-color: rgb(58, 58, 255);
+}
+
+header > .header-info {
+    margin: 0 auto;
+    width: 45%;
+}
+
+header > .header-info > svg {
+    width: 40%;
+    fill: #ffffff;
+}
+
+header > .header-info > .app-info {
+    float: right;
+}
+
+header > .header-info > .app-info > h1 {
+    margin: 35px 0 0;
+}
+
+header > .header-info > .app-info > p {
+    margin: 0;
+    opacity: .7;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header.logged {
+    border-bottom: 2px solid #80808050;
+    text-align: center;
+    color: royalblue;
+    background-color: transparent;
+}
+
+main {
+    padding: 25px 0;
+    text-align: center;
+}
+
+main > h3 {
+    color: gray;
+}
+
+main > p,
+main > #projects > p {
+    color: gray;
+}
+
+main > #projects > img {
+    width: 40%;
+}
+
+main > #projects > a.button {
+    margin: 35px 0 !important;
+    padding: 20px 35px;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(58, 58, 255);
+}
+
+main > form {
+    margin: 0 auto;
+    width: 50%;
+    color: gray;
+}
+
+main > form > p {
+    text-align: left;
+}
+
+main > form > input {
+    margin-bottom: 15px;
+    padding: 15px 0;
+    /*display: block;*/
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-width: medium;
+    font-size: medium;
+    color: gray;
+    transition: border .5s;
+}
+
+main > form > input:focus {
+    outline: 0;
+    border-color: rgb(58, 58, 255);
+}
+
+main > form > input:last-of-type {
+    margin-bottom: 0;
+}
+
+main > form > button {
+    margin: 25px auto;
+    padding: 20px 35px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgb(58, 58, 255);
+    transition: background-color .5s;
+}
+
+main > form > button:hover {
+    background-color: rgb(42, 42, 185);
+}
+
+main > form > input,
+main > form > button {
+    width: 100%;
+}
+
+main > form > a.reset-password {
+    margin: 7px 0 15px;
+    float: right;
+    font-size: 15px;
+}
+
+main > form > a.register {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+}
+
+footer {
+    /*bottom: 0;*/
+    padding: 25px 0;
+    /*width: 50%;/
+    /*position: absolute;*/
+    text-align: center;
+    color: #ffffff99;
+    background-color: rgb(58, 58, 255);
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+}
