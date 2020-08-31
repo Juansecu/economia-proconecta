@@ -6,7 +6,7 @@
 
     [ApiController]
     [Route("api/v1/[controller]")]
-    [AllowAnonymous]
+    [Authorize]
     public class ReadyController : ControllerBase
     {
         #region Attributes

@@ -1,8 +1,5 @@
 ﻿namespace Proconecta.Api
 {
-    using System;
-    using System.IdentityModel.Tokens.Jwt;
-    using System.Text;
     using Microsoft.AspNetCore.Authentication.JwtBearer;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -13,29 +10,20 @@
         public static void ConfigAuth(this IServiceCollection services,
             IConfiguration config)
         {
-
-            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
-
-            services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-            .AddJwtBearer(cfg =>
-            {
-                cfg.RequireHttpsMetadata = false;
-                cfg.SaveToken = true;
-                cfg.TokenValidationParameters = new TokenValidationParameters
+            services
+                .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
                 {
-                    ValidIssuer = config["Jwt:Issuer"],
-                    ValidAudience = config["Jwt:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(
-                        Encoding.UTF8.GetBytes(config["Jwt:SigningKey"])
-                    ),
-                    ClockSkew = TimeSpan.FromMinutes(1),
-                };
-            });
+                    options.Authority = config["Authentication:JwtBearer:Authority"];
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidIssuer = config["Authentication:JwtBearer:TokenValidation:Issuer"],
+                        ValidateAudience = true,
+                        ValidAudience = config["Authentication:JwtBearer:TokenValidation:Audience"],
+                        ValidateLifetime = true
+                    };
+                });
         }
     }
 }

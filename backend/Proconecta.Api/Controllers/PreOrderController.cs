@@ -12,20 +12,20 @@
     [ApiController]
     [Authorize]
     [Route("api/v1/[controller]")]
-    public class ProjectController : ControllerBase
+    public class PreOrderController : ControllerBase
     {
         #region Attributes
         private readonly IMapper _mapper;
-        private readonly IProjectBL _projectBL;
+        private readonly IPreOrderBL _preOrderBL;
         #endregion
 
         #region Constructors
-        public ProjectController(
+        public PreOrderController(
             IMapper mapper,
-            IProjectBL projectBL)
+            IPreOrderBL preOrderBL)
         {
             _mapper = mapper;
-            _projectBL = projectBL;
+            _preOrderBL = preOrderBL;
         }
         #endregion
 
@@ -33,35 +33,35 @@
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var projects = await _projectBL.Get();
-            return Ok(projects);
+            var preOrders = await _preOrderBL.Get();
+            return Ok(preOrders);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById([FromRoute] string id)
         {
-            var project = await _projectBL.GetById(id);
-            return Ok(project);
+            var preOrder = await _preOrderBL.GetById(id);
+            return Ok(preOrder);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Project viewModel)
+        public async Task<IActionResult> Post([FromBody] PreOrder viewModel)
         {
-            var created = await _projectBL.Insert(viewModel);
+            var created = await _preOrderBL.Insert(viewModel);
             return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
         [HttpPatch("{id}")]
-        public async Task<IActionResult> Patch([FromRoute] string id, [FromBody] Project viewModel)
+        public async Task<IActionResult> Patch([FromRoute] string id, [FromBody] PreOrder viewModel)
         {
-            var updated = await _projectBL.Update(id, viewModel);
+            var updated = await _preOrderBL.Update(id, viewModel);
             return Accepted(updated);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete([FromRoute] string id)
         {
-            var response = await _projectBL.Delete(id);
+            var response = await _preOrderBL.Delete(id);
             return Accepted(response);
         }
 

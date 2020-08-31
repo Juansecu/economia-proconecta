@@ -9,7 +9,7 @@
     using Proconecta.Data.Models;
 
     [ApiController]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     [Route("api/v1/[controller]")]
     public class UserController : ControllerBase
     {
@@ -32,7 +32,6 @@
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            ;
             var users = await _userBL.Get();
             return Ok(users);
         }

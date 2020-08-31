@@ -12,20 +12,20 @@
     [ApiController]
     [Authorize]
     [Route("api/v1/[controller]")]
-    public class ProjectController : ControllerBase
+    public class CategoryController : ControllerBase
     {
         #region Attributes
         private readonly IMapper _mapper;
-        private readonly IProjectBL _projectBL;
+        private readonly ICategoryBL _categoryBL;
         #endregion
 
         #region Constructors
-        public ProjectController(
+        public CategoryController(
             IMapper mapper,
-            IProjectBL projectBL)
+            ICategoryBL categoryBL)
         {
             _mapper = mapper;
-            _projectBL = projectBL;
+            _categoryBL = categoryBL;
         }
         #endregion
 
@@ -33,35 +33,35 @@
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var projects = await _projectBL.Get();
-            return Ok(projects);
+            var categorys = await _categoryBL.Get();
+            return Ok(categorys);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById([FromRoute] string id)
         {
-            var project = await _projectBL.GetById(id);
-            return Ok(project);
+            var category = await _categoryBL.GetById(id);
+            return Ok(category);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Project viewModel)
+        public async Task<IActionResult> Post([FromBody] Category viewModel)
         {
-            var created = await _projectBL.Insert(viewModel);
+            var created = await _categoryBL.Insert(viewModel);
             return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
         [HttpPatch("{id}")]
-        public async Task<IActionResult> Patch([FromRoute] string id, [FromBody] Project viewModel)
+        public async Task<IActionResult> Patch([FromRoute] string id, [FromBody] Category viewModel)
         {
-            var updated = await _projectBL.Update(id, viewModel);
+            var updated = await _categoryBL.Update(id, viewModel);
             return Accepted(updated);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete([FromRoute] string id)
         {
-            var response = await _projectBL.Delete(id);
+            var response = await _categoryBL.Delete(id);
             return Accepted(response);
         }
 

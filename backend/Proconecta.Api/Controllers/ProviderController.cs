@@ -12,20 +12,20 @@
     [ApiController]
     [Authorize]
     [Route("api/v1/[controller]")]
-    public class ProjectController : ControllerBase
+    public class ProviderController : ControllerBase
     {
         #region Attributes
         private readonly IMapper _mapper;
-        private readonly IProjectBL _projectBL;
+        private readonly IProviderBL _providerBL;
         #endregion
 
         #region Constructors
-        public ProjectController(
+        public ProviderController(
             IMapper mapper,
-            IProjectBL projectBL)
+            IProviderBL providerBL)
         {
             _mapper = mapper;
-            _projectBL = projectBL;
+            _providerBL = providerBL;
         }
         #endregion
 
@@ -33,35 +33,35 @@
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var projects = await _projectBL.Get();
-            return Ok(projects);
+            var providers = await _providerBL.Get();
+            return Ok(providers);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById([FromRoute] string id)
         {
-            var project = await _projectBL.GetById(id);
-            return Ok(project);
+            var provider = await _providerBL.GetById(id);
+            return Ok(provider);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Project viewModel)
+        public async Task<IActionResult> Post([FromBody] Provider viewModel)
         {
-            var created = await _projectBL.Insert(viewModel);
+            var created = await _providerBL.Insert(viewModel);
             return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
         [HttpPatch("{id}")]
-        public async Task<IActionResult> Patch([FromRoute] string id, [FromBody] Project viewModel)
+        public async Task<IActionResult> Patch([FromRoute] string id, [FromBody] Provider viewModel)
         {
-            var updated = await _projectBL.Update(id, viewModel);
+            var updated = await _providerBL.Update(id, viewModel);
             return Accepted(updated);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete([FromRoute] string id)
         {
-            var response = await _projectBL.Delete(id);
+            var response = await _providerBL.Delete(id);
             return Accepted(response);
         }
 
