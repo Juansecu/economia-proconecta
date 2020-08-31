@@ -32,3 +32,8 @@ Además, se podrá evaluar a los proveedores para futuras referencias.
 # Modelo de negocio
 
 Se plantea que el uso de esta Plataforma sea totalmente gratuita para los emprendedores. En el caso de los proveedores, al funcionar de forma gratuita, limitar el número de productos que puedan regitrarse y el alcance territorial donde se muestren, y si les interesa aumentar su número de productos en exhibición y alcance, contratar licencia por mes o año.
+
+
+# Tecnologías y Herramientas
+
+C#, Javascript, Typescript, Ionic, Firebase, Heroku, Docker, Adobe XD
