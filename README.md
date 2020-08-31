@@ -18,7 +18,7 @@ Con lo que ha pasado con la situación económica este año, no solo en México,
 
 # Propósito
 
-Conectar a los emprendedores de forma sencilla y directa con los proveedores necesarios para su Proyecto. 
+Conectar a los emprendedores de forma sencilla y directa con los proveedores locales necesarios para su Proyecto. 
 Reactivando la economía para los pequeños negocios y dandoles la herramienta de ampliar su alcance de ventas.
 
 
