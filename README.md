@@ -4,8 +4,8 @@
 
 # Demo
 
-Emprendedor [DEMO](http://www.google.com){: .btn}
-Proveedor [DEMO](http://www.google.com){: .btn}
+Emprendedor [DEMO](http://www.google.com)
+Proveedor [DEMO](http://www.google.com)
 
 # Problemática
 
