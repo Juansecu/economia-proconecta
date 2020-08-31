@@ -8,9 +8,10 @@ Emprendedor [DEMO](https://xd.adobe.com/view/2c478728-bcd3-407e-8d45-a035cf5c701
 
 Proveedor [DEMO](https://xd.adobe.com/view/dbb61384-4e3a-45e6-b037-8627343bd534-8ee5/?fullscreen&hints=off)
 
+
 # Problemática
 
-Existen muchas personas con ganas de emprender un negocio, pero se ven detenidos por la falta de elementos para poner en marcha su Proyecto, ya que no encuentran donde poder surtir su materia prima o insumos necesarios ni conocen con claridad lo que necesitan.
+Existen muchas personas con ganas de emprender un negocio, pero se ven detenidos por la falta de elementos para poner en marcha su Proyecto, ya que no encuentran donde poder surtir su materia prima o insumos necesarios, incluso, en ocasiones no conocen con claridad lo que necesitan.
 
 Con lo que ha pasado con la situación económica este año, no solo en México, si no a nivel global. Muchos pequeños negocios han tenido que cerrar. 
 
@@ -23,9 +24,12 @@ Reactivando la economía para los pequeños negocios y dandoles la herramienta d
 
 # Funcionamiento de Proconecta
 
-El emprendedor inicia sesión y tras registrar su Proyecto, puede acceder a un listado de categorías donde encontrará a los proveedores locales según su ubicación.
+La plataforma funciona basada en dos tipos de usuarios: Usuario emprendedor y usuario proveedor. 
 
-Dentro del perfil de los proveedores, podrá encontrar los artículos relacionados a su giro que ellos ofrecen, con precios y descripciones.
+El emprendedor es quien está buscando proveedores para su nuevo negocio, inicia sesión y tras registrar su Proyecto, puede acceder a un listado de categorías donde encontrará a los proveedores locales según su ubicación.
+
+Para los usuarios proveedor, podrán registrar los artículos relacionados a su giro que ellos ofrecen, con precios y descripciones.
+
 Además, se podrá evaluar a los proveedores para futuras referencias.
 
 
